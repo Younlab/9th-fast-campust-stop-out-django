@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ students.name }}</h1>
+    <ul>
+        {% for friend in student_friend %}
+            <li>{{ friend }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
